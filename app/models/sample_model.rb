@@ -9,7 +9,7 @@ def computer_turn
 end
 
 def compare(userGuess, computer_turn)
-    if userGuess == computer_turn
+    if userGuess.capitalize == computer_turn
         return "Minds melded! The computer guesssed #{computer_turn}. You guessed #{userGuess}."
     else
         return "Losers. Your minds aren't melded. The computer guesssed #{computer_turn}. You guessed #{userGuess}."
