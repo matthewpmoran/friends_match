@@ -2,7 +2,10 @@ GEM
   remote: https://rubygems.org/
   specs:
     coderay (1.1.2)
+    httparty (0.16.2)
+      multi_xml (>= 0.5.2)
     method_source (0.9.0)
+    multi_xml (0.6.0)
     mustermann (1.0.2)
     pry (0.11.3)
       coderay (~> 1.1.0)
@@ -23,6 +26,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  httparty
   pry
   shotgun
   sinatra

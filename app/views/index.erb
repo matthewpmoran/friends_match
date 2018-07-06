@@ -1,18 +1,37 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <title>title</title>
-    <link rel="stylesheet" href="css/style.css">
-  <body>
-
-    <h1> Friends Match </h1>
-
-    <form method="post" action="/game">
-      <p>Enter a character from "Friends" (either Monica, Rachel, Phoebe, Chandler, Joey, or Ross) </p>
+    <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta charset="utf-8">
+        <title>Mind Meld</title>
+        <style media="screen">
+            body {
+                padding: 20px;
+                background-color: 
+            }
+            #results{
+                ;
+            }
+        </style>
+    </head>
+    <nav>
+    <div class="nav-wrapper ">
+      <a href="#" class="brand-logo center">Mind Meld</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+      </ul>
+    </div>
+  </nav>
+  
+  <h5>Try to match words with the computer</h5> 
+    <form method="post" action="/gamestart">
+      <p>Enter a word of your choice</p>
       <input type="text" name="userGuess">
       <button type="submit">Submit</button>
-    </form>
+    </form><br>
+    
+    
     
   </body>
 </html>

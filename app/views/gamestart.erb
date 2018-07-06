@@ -1,0 +1,74 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta charset="utf-8">
+        <title>Mind Meld</title>
+        <style media="screen">
+            body {
+                padding: 20px;
+                background-color: 
+            }
+            #results{
+                ;
+            }
+        </style>
+    </head>
+    <nav>
+    <div class="nav-wrapper ">
+      <a href="#" class="brand-logo center">Mind Meld</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+      </ul>
+    </div>
+  </nav>
+  
+  <h5>Try to match words with the computer</h5> 
+    <form method="post" action="/gameplay/<%= @userGuess %>/<%= @computerGuess %>">
+      <p>Enter a word of your choice</p>
+      <input type="text" name="userGuess">
+      <button type="submit">Submit</button>
+    </form><br>
+    
+    <div id="results">
+    <div class="row">
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-content">
+              <!--<img src="https://media.giphy.com/media/777Aby0ZetYE8/giphy.gif" width=100%>-->
+              <span class="card-title">User Choice</span>
+              <p>You chose: <%=@userGuess %></p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-content">
+              <!--<img src="https://media.giphy.com/media/l2Je66zG6mAAZxgqI/giphy.gif" width=100%>-->
+              <span class="card-title">Computer Choice</span>
+              <p>The computer chose: <%=@computerGuess %></p>
+            </div>
+          </div>
+        </div>
+    </div>
+  
+    <div class="row">
+    <div class="col s12">
+      <div class="card">
+        <div class="card-content">
+          <span class="card-title">Results</span>
+          <p><%=@results%></p>
+        </div>
+        <div class="card-content">
+          <!--<img src="https://media.giphy.com/media/dh2XvZthDl7ag/giphy.gif" width=50%>-->
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    
+  </body>
+</html>
